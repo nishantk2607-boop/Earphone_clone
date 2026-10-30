@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+    }
+    .main-container{
+        height:100vh;
+        background-color:rgb(164, 204, 164);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+    }
+    .card-center{
+        width:25%;
+        height:75%;
+        border-radius:30px;
+        background-color:white;
+    }
+    .image-container{
+        height:50%;
+        background-color:lightgray;
+        display:flex;
+        justify-content:center;
+        border-radius:30px 30px 0 0;
+        position : relative;
+    }
+    .image-container img{
+        height:100%;
+        width:100%;
+        border-radius:30px 30px 0 0;
+    }
+    .image-des{
+        height:35%;
+        border-bottom:1px solid lightgray;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        padding:10px 20px 0px 20px;
+    }
+    .image-description h1{
+        font-weight:700;
+        font-size:28px;
+    } 
+    .image-dec-btn-cont{
+        display:flex;
+        justify-content:space-between;
+    }
+    .image-dec-btn-cont button{
+        width:40%;
+        height:40px;
+        border-radius:5px;
+        border:1px solid lightgray;
+        background-color:transparent;       
+        
+    }
+    .price-container{
+        height:15%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:0px 20px 0px 20px;
+    }
+    .price-container h1 span{
+        font-size:15px;
+        font-weight:300;
+        text-decoration:line-through;
+    } 
+    .price-container button{
+        width:60%;
+        height:50%;
+        border-radius:5px;
+        border:none;
+        background:linear-gradient(to right, #45e84f, #c7ee35);
+    }
+    .label{
+        height : 30px;
+        width : 100px;
+        border : 1px solid green;
+        position : absolute;
+        right : 0px;
+        top : 0px;
+        background-color : aqua;
+        z-index : 100;
+        border-radius: 20PX;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="main-container">
+        <div class="card-center">
+            <section class="image-container">
+                <div class = "label">
+                    New
+                </div>
+                <img src="https://images.pexels.com/photos/3945667/pexels-photo-3945667.jpeg?cs=srgb&dl=pexels-cottonbro-3945667.jpg&fm=jpg" alt="headphone">
+            </section>
+            <section class="image-des">
+                <h1>Airpods Max</h1>
+                <p>lore ipsum dolor sit amet consectetur adipisicing elit. Maiores, sunt?</p>
+                <div class = "image-dec-btn-cont">
+                    <button>Green</button>
+                    <button>Just the Device</button>
+                </div>
+            </section>
+            <section class = "price-container">
+                <h1><span>$2000</span>$599</h1>
+                <button>+ Add to Cart</button>
+            </section> 
+        </div>
+    </div>               
+    
+</body>
+</html>
